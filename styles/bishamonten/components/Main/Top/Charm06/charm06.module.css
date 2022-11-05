@@ -1,0 +1,22 @@
+.bgImg01 {
+    background-image: url("../../../../../../public/bishamonten/cook.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bgImg02 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../../../../../public/bishamonten/mapo.jpg");
+
+}
+
+.bgImg03 {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../../../../../public/shop-good-logo.png");
+}

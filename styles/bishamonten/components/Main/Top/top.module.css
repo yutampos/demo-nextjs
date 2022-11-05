@@ -1,0 +1,39 @@
+.colorBox {
+    height: 100%;
+    /* max-height: 1800px; */
+    width: 100%;
+    background-color: #2b0d07;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.backgroundImg {
+
+    background-image: url("../../../../../public/bishamonten/in-shop.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.animation {
+    animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(180px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+    40%,
+    100% {
+        opacity: 1;
+    }
+}

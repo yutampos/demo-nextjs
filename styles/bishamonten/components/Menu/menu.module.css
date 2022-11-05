@@ -1,0 +1,19 @@
+.Menu {
+  display: inline;
+}
+
+.menuItem {
+  transition-delay: 2s;
+  background-color: #ddd;
+  transition: margin-right 0.2s;
+
+}
+
+
+
+
+@media screen and (max-width: 960px) {
+  .Menu {
+    display: none;
+  }
+}

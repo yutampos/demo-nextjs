@@ -1,0 +1,43 @@
+.colorBox {
+    height: 100%;
+    /* max-height: 1800px; */
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    top: 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.backgroundImg {
+
+    background-color: rgb(246, 246, 246);
+}
+
+.backgroundImg2 {
+    background-color: rgba(255, 255, 255, 0.34);
+    background-blend-mode: lighten;
+    width: 100%;
+
+    background-image: url("../../../../../public/bishamonten/bg-paper.jpg");
+}
+
+.animation {
+    animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(180px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+    40%,
+    100% {
+        opacity: 1;
+    }
+}
