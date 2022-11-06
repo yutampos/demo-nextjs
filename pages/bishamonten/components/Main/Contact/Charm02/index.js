@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
-import { Grid, Select, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 
 const formTypes = [
   {
@@ -263,9 +263,7 @@ const Charm02 = () => {
   return (
     <Section ref={ref} inView={inView}>
       <Grid
-        width="90%"
         height="auto"
-        bgcolor="white"
         display="flex"
         flexDirection="column"
         alignItems="center"

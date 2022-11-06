@@ -2,9 +2,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
-import goodLogo from "../../../../../../public/shop-good-logo.png";
 import Image from "next/image";
-import zIndex from "@mui/material/styles/zIndex";
 
 const Charm02 = () => {
   const { ref, inView } = useInView({
@@ -70,8 +68,13 @@ const Charm02 = () => {
           mt={12}
         >
           <Grid display="flex" flexDirection="column">
-            <Grid width="530px">
-              <Image src={goodLogo} alt="いい感じのお店のロゴ" />
+            <Grid position="relative" width="500px" height="400px">
+              <Image
+                layout="fill"
+                objectFit="cover"
+                src="/shop-good-logo.png"
+                alt="いい感じのお店のロゴ"
+              />
             </Grid>
             <h3
               style={{
@@ -95,8 +98,13 @@ const Charm02 = () => {
             </p>
           </Grid>
           <Grid display="flex" flexDirection="column">
-            <Grid width="530px">
-              <Image src={goodLogo} alt="いい感じのお店のロゴ" />
+            <Grid position="relative" width="500px" height="400px">
+              <Image
+                layout="fill"
+                objectFit="cover"
+                src="/shop-good-logo.png"
+                alt="いい感じのお店のロゴ"
+              />
             </Grid>
 
             <h3

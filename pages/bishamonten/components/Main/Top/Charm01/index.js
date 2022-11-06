@@ -2,7 +2,6 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
-import nikuman from "../../../../../../public/bishamonten/nikuman.png";
 import Image from "next/image";
 
 const Charm01 = () => {
@@ -18,8 +17,13 @@ const Charm01 = () => {
     <Section ref={ref} inView={inView}>
       <Grid width="100vw" display="flex">
         <Grid width="55%" display="flex" justifyContent="center">
-          <Grid position="relative">
-            <Image width={5184} height={3456} src={nikuman} alt="肉まん" />
+          <Grid position="relative" width="1000px" height="550px">
+            <Image
+              layout="fill"
+              objectFit="contain"
+              src="/bishamonten/nikuman.png"
+              alt="肉まん"
+            />
           </Grid>
         </Grid>
         <Grid width="45%" display="flex" justifyContent="center" padding={7}>

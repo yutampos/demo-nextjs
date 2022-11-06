@@ -2,7 +2,6 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
-import OldPaper from "../../../../../../public/bishamonten/bg-paper.jpg";
 
 const Charm02 = () => {
   const { ref, inView } = useInView({

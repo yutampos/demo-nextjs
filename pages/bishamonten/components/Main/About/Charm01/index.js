@@ -2,7 +2,6 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 import { Grid } from "@mui/material";
-import nikuman from "../../../../../../public/bishamonten/nikuman-2.jpg";
 import Image from "next/image";
 
 const Charm01 = () => {
@@ -37,9 +36,14 @@ const Charm01 = () => {
             四川料理を
           </h2>
         </Grid>
-        <Grid width="55%" display="flex" justifyContent="center">
-          <Grid position="relative" maxWidth="600px">
-            <Image width={5184} height={3456} src={nikuman} alt="肉まん" />
+        <Grid width="55%" display="flex" justifyContent="start">
+          <Grid position="relative" width="800px" height="400px">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              src="/bishamonten/nikuman-2.jpg"
+              alt="肉まん"
+            />
           </Grid>
         </Grid>
       </Grid>

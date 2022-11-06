@@ -1,14 +1,8 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
-import ShopImage from "../../../../../../public/bishamonten/shop-logo-gold.png";
-import InShop from "../../../../../../public/bishamonten/in-shop.jpeg";
-import Cook from "../../../../../../public/bishamonten/cook.jpg";
-import Mapo from "../../../../../../public/bishamonten/mapo.jpg";
-
 import Image from "next/image";
 import { Grid, Typography } from "@mui/material";
-import styles from "../../../../../../styles/bishamonten/components/Main/Top/Charm03/charm03.module.css";
 
 const Charm03 = () => {
   const { ref, inView } = useInView({
@@ -31,12 +25,16 @@ const Charm03 = () => {
         >
           Make the best move.
         </Typography>
-        <Grid display="flex" px={4}>
-          <Grid maxWidth="200px" maxHeight="270px" overflow="hidden" m={6}>
-            <Grid ml={0}>
-              <Image width={4160} height={6240} src={Cook} alt="店員" />
-            </Grid>
+        <Grid display="flex" px={10}>
+          <Grid position="relative" width="200px" height="270px">
+            <Image
+              src="/bishamonten/cook.jpg"
+              alt="店員"
+              layout="fill"
+              objectFit="contain"
+            />
           </Grid>
+
           <Grid display="flex" flexDirection="column" m={6} py={3}>
             <Typography
               fontFamily="serif"

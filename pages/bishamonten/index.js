@@ -1,11 +1,7 @@
 import Image from "next/image";
 import styles from "../../styles/bishamonten/bishamonten.module.css";
-import Header from "./components/Header";
 import HeadInfo from "./HeadInfo";
-import ShopImage from "../../public/shop-logo.png";
-// import BgVideo from "../../public/bishamonten/video/stir-fly.mp4";
 import { useEffect, useState } from "react";
-import Menu from "./components/Header/Menu";
 import Top from "./components/Main/Top";
 import Footer from "./components/Footer";
 import { Grid, Typography } from "@mui/material";
@@ -40,8 +36,9 @@ export default function Bishamonten() {
           height={windowY}
           width="100%"
           playsInline={true}
+          src="/bishamonten/video/stir-fly.mp4"
         >
-          <source src="/bishamonten/video/stir-fly.mp4" type="video/mp4" />
+          {/* <source src="/bishamonten/video/stir-fly.mp4" type="video/mp4" /> */}
         </video>
       </div>
       <div className={styles.container}>
@@ -55,17 +52,10 @@ export default function Bishamonten() {
                 <Image
                   width={195}
                   height={80}
-                  src={ShopImage}
+                  src="/shop-logo.png"
                   alt="お店の画像"
                 />
               </Grid>
-
-              {/* <Image
-                width={280}
-                height={157}
-                src={ShopImage}
-                alt="お店の画像"
-              /> */}
             </div>
 
             <h1 className={styles.title}>
@@ -128,9 +118,14 @@ export default function Bishamonten() {
                 </h3>
               </div>
               <div className={styles.headerBox}>
-                <div style={{ position: "absolute", top: "100vh" }}>
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "100vh",
+                  }}
+                >
                   <Top />
-                  <Footer />
+                  {/* <Footer /> */}
                 </div>
               </div>
             </div>

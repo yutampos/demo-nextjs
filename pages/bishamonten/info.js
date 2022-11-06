@@ -1,9 +1,6 @@
 import Image from "next/image";
 import styles from "../../styles/bishamonten/bishamonten.module.css";
-import Header from "./components/Header";
 import HeadInfo from "./HeadInfo";
-import ShopImage from "../../public/shop-image-top.png";
-import Menu from "./components/Header/Menu";
 import Body from "./components/Main/Info";
 import Footer from "./components/Footer";
 import { Grid } from "@mui/material";
@@ -24,7 +21,7 @@ export default function Info() {
                   <Image
                     width={280}
                     height={157}
-                    src={ShopImage}
+                    src="/shop-image-top.png"
                     alt="お店の画像"
                   />
                 </div>

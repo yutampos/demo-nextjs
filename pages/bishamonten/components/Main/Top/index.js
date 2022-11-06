@@ -40,13 +40,12 @@ const Top = () => {
           </Grid>
           <Grid
             paddingY={14}
-            width="100%"
             display="flex"
             justifyContent="center"
             backgroundColor="rgba(255,255,255,0.9)"
             sx={{ backdropFilter: " blur(10px)" }}
           >
-            <Grid maxWidth="1600px" width="100%">
+            <Grid width="100%" maxWidth="1600px">
               <Charm03 />
             </Grid>
           </Grid>

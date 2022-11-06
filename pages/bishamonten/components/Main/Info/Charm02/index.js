@@ -2,9 +2,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 import { Grid, Typography } from "@mui/material";
-import Cook from "../../../../../../public/bishamonten/cook.jpg";
 import Image from "next/image";
-import zIndex from "@mui/material/styles/zIndex";
 
 const infoList = [
   { key: 0, name: "店舗名", value: "一口餃子の大明神" },
@@ -107,16 +105,14 @@ const Charm02 = () => {
             return Self(info.name, info.value);
           })}
         </Grid>
-        <Grid
-          ml={1}
-          mt={13}
-          maxWidth="450px"
-          maxHeight="300px"
-          border={1}
-          overflow="hidden"
-        >
-          <Grid mt={-20}>
-            <Image width={4160} height={6240} src={Cook} alt="店員" />
+        <Grid ml={1} mt={13}>
+          <Grid position="relative" width="450px" height="300px">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              src="/bishamonten/cook.jpg"
+              alt="店員"
+            />
           </Grid>
         </Grid>
       </Grid>

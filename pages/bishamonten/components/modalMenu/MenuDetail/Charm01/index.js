@@ -25,6 +25,7 @@ const muiLinkStyle = {
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
+  textDecoration: "none",
 };
 const underlineStyle = {
   width: "0px",
@@ -60,43 +61,43 @@ export const Charm01 = () => {
         >
           <Grid sx={boxStyle}>
             <NextLink href="/bishamonten" passHref>
-              <MuiLink disabled underline="none" sx={muiLinkStyle}>
+              <Grid sx={muiLinkStyle}>
                 <Typography sx={fontStyle}>トップ</Typography>
                 <Grid sx={underlineStyle} />
-              </MuiLink>
+              </Grid>
             </NextLink>
           </Grid>
 
           <Grid sx={boxStyle}>
             <NextLink href="/bishamonten/products" passHref>
-              <MuiLink disabled underline="none" sx={muiLinkStyle}>
+              <Grid sx={muiLinkStyle}>
                 <Typography sx={fontStyle}>商品一覧</Typography>
                 <Grid sx={underlineStyle} />
-              </MuiLink>
+              </Grid>
             </NextLink>
           </Grid>
           <Grid sx={boxStyle} height="80px">
             <NextLink href="/bishamonten/about" passHref>
-              <MuiLink disabled underline="none" sx={muiLinkStyle}>
+              <Grid sx={muiLinkStyle}>
                 <Typography sx={fontStyle}>四川金竜について</Typography>
                 <Grid sx={underlineStyle} />
-              </MuiLink>
+              </Grid>
             </NextLink>
           </Grid>
           <Grid sx={boxStyle} height="80px">
             <NextLink href="/bishamonten/info" passHref>
-              <MuiLink disabled underline="none" sx={muiLinkStyle}>
+              <Grid sx={muiLinkStyle}>
                 <Typography sx={fontStyle}>店舗概要</Typography>
                 <Grid sx={underlineStyle} />
-              </MuiLink>
+              </Grid>
             </NextLink>
           </Grid>
           <Grid sx={boxStyle} height="80px">
             <NextLink href="/bishamonten/contact" passHref>
-              <MuiLink disabled underline="none" sx={muiLinkStyle}>
+              <Grid sx={muiLinkStyle}>
                 <Typography sx={fontStyle}>お問い合わせ</Typography>
                 <Grid sx={underlineStyle} />
-              </MuiLink>
+              </Grid>
             </NextLink>
           </Grid>
         </Grid>

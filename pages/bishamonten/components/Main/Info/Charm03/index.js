@@ -1,10 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
-import Paper from "../../../../../../public/bishamonten/bg-paper.jpg";
-import aboutImg from "../../../../../../public/bishamonten/about-img.png";
-
-import Image from "next/image";
 import { Grid, Link, Typography } from "@mui/material";
 
 const Charm03 = () => {

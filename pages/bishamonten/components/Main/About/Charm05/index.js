@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 import ShopImage from "../../../../../../public/bishamonten/shop-logo-gold.png";
 import Cook from "../../../../../../public/bishamonten/cook.jpg";
-import BgVideo from "../../../../../../public/bishamonten/video/stir-fly.mp4";
+
 import Image from "next/image";
 import { Grid, Typography } from "@mui/material";
 import styles from "../../../../../../styles/bishamonten/components/Main/Top/Charm03/charm03.module.css";
@@ -54,7 +54,7 @@ const Charm05 = () => {
         </Grid>
         <Grid display="flex" justifyContent="center" p={4}>
           <video muted width="600px" controls playsInline={true}>
-            <source src={BgVideo} type="video/mp4" />
+            <source src="/bishamonten/video/stir-fly.mp4" type="video/mp4" />
           </video>
         </Grid>
       </Grid>

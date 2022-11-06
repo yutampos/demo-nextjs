@@ -16,8 +16,7 @@ const About = () => {
           width="100%"
           display="flex"
           alignItems="center"
-          paddingTop={12}
-          paddingBottom={26}
+          py={18}
           sx={{
             bgcolor: "rgba(255,255,255,0.9)",
             backdropFilter: "blur(20px)",
@@ -27,30 +26,37 @@ const About = () => {
         </Grid>
 
         <div className={styles.backgroundImg}>
-          <Grid display="flex" alignItems="center" flexDirection="column">
+          <Grid
+            paddingY={14}
+            display="flex"
+            alignItems="center"
+            flexDirection="column"
+          >
             <Grid position="relative" maxWidth="1600px" width="100%">
               <Charm02 />
             </Grid>
           </Grid>
-          <Grid paddingY={14} width="100%">
+          <Grid pt={14} pb={20} width="100%">
             <Grid width="100%" display="flex" justifyContent="center">
               <Charm03 />
             </Grid>
           </Grid>
         </div>
-        <div className={styles.backgroundImg2}>
-          <Grid
-            paddingY={14}
-            width="100%"
-            display="flex"
-            flexDirection="column"
-            justifyContent="center"
-            alignItems="center"
-            style={{ backdropFilter: " blur(1.4px)" }}
-          >
-            <Charm04 />
-          </Grid>
-        </div>
+        {/* <div className={styles.backgroundImg2}> */}
+        <Grid
+          height="100%"
+          width="100%"
+          display="flex"
+          alignItems="center"
+          py={18}
+          sx={{
+            bgcolor: "rgba(255,255,255,0.9)",
+            backdropFilter: "blur(20px)",
+          }}
+        >
+          <Charm04 />
+        </Grid>
+        {/* </div> */}
         <Grid paddingY={14} width="100%" display="flex" justifyContent="center">
           <Grid maxWidth="1600px" width="100%">
             <Charm05 />

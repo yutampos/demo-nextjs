@@ -2,8 +2,6 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
 import { Grid, Typography } from "@mui/material";
-import nikuman from "../../../../../../public/bishamonten/nikuman.jpg";
-import Image from "next/image";
 
 const Charm01 = () => {
   const { ref, inView } = useInView({

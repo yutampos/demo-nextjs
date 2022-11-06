@@ -1,6 +1,5 @@
 import { Grid, Typography } from "@mui/material";
 import Image from "next/image";
-import plateImg from "../../../../../public/bishamonten/products/plate-illust-img.png";
 import Charm06 from "../Top/Charm06";
 
 const productList = [
@@ -109,8 +108,14 @@ const Products = () => {
       >
         <Grid pb={13} display="flex" justifyContent="center">
           <Grid display="flex" flexDirection="column" alignItems="center">
-            <Grid width="60px" style={{ filter: "opacity(50%)" }}>
-              <Image src={plateImg} />
+            <Grid style={{ filter: "opacity(50%)" }}>
+              <Grid position="relative" width="60px" height="60px">
+                <Image
+                  layout="fill"
+                  objectFit="contain"
+                  src="/bishamonten/products/plate-illust-img.png"
+                />
+              </Grid>
             </Grid>
             <Typography
               p={3.5}

@@ -1,6 +1,5 @@
 import { Grid, Typography } from "@mui/material";
 import Image from "next/image";
-import ShopImage from "../../../../public/shop-image-top.png";
 
 const Footer = () => {
   return (
@@ -30,7 +29,12 @@ const Footer = () => {
               alignItems="start"
             >
               <Grid width="200px">
-                <Image src={ShopImage} alt="お店のロゴ" />
+                <Image
+                  src="/shop-image-top.png"
+                  width={1920}
+                  height={1080}
+                  alt="お店のロゴ"
+                />
               </Grid>
               <Grid ml={3}>
                 <Typography

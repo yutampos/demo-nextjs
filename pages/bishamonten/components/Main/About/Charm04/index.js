@@ -1,8 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
-import Paper from "../../../../../../public/bishamonten/bg-paper.jpg";
-import aboutImg from "../../../../../../public/bishamonten/about-img.png";
 
 import Image from "next/image";
 import { Grid, Typography } from "@mui/material";
@@ -135,12 +133,19 @@ const Charm04 = () => {
             </Typography>
           </Grid>
         </Grid>
+
         <Grid
+          position="relative"
           style={{ filter: "brightness(160%)", filter: "opacity(92%)" }}
           ml={9}
           width="780px"
+          height="700px"
         >
-          <Image src={aboutImg} />
+          <Image
+            layout="fill"
+            objectFit="contain"
+            src="/bishamonten/about-img.png"
+          />
         </Grid>
       </Grid>
     </Section>
