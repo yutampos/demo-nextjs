@@ -1,6 +1,6 @@
 import { Button, Grid } from "@mui/material";
 import { useState } from "react";
-import { Charm01 } from "./MenuDetail/Charm01";
+import Charm01 from "./MenuDetail/Charm01";
 
 const btnStyle1 = {
   opacity: 0,

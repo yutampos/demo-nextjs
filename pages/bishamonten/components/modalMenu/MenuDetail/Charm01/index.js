@@ -41,7 +41,7 @@ const boxStyle = {
   alignItems: "center",
 };
 
-export const Charm01 = () => {
+const Charm01 = () => {
   const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0,
@@ -124,7 +124,7 @@ export const Charm01 = () => {
     </Section>
   );
 };
-
+export default Charm01;
 // inViewがtrueになると透明度が0.5から1になり、50px下から移動してくる
 const Section = styled.section`
   height: 100%;
