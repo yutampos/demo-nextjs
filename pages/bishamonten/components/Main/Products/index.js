@@ -111,6 +111,7 @@ const Products = () => {
             <Grid style={{ filter: "opacity(50%)" }}>
               <Grid position="relative" width="60px" height="60px">
                 <Image
+                  alt="商品の写真"
                   layout="fill"
                   objectFit="contain"
                   src="/bishamonten/products/plate-illust-img.png"

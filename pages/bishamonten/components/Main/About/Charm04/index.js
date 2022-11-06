@@ -145,6 +145,7 @@ const Charm04 = () => {
             layout="fill"
             objectFit="contain"
             src="/bishamonten/about-img.png"
+            alt="お店のイメージ写真"
           />
         </Grid>
       </Grid>

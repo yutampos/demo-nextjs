@@ -112,7 +112,12 @@ export const Charm01 = () => {
       >
         <Grid display="flex" alignItems="center">
           <Grid maxWidth="200px">
-            <Image src="/shop-image-top.png" width={100} height={100} />
+            <Image
+              src="/shop-image-top.png"
+              width={100}
+              height={100}
+              alt="お店のイメージ写真"
+            />
           </Grid>
         </Grid>
       </Grid>
