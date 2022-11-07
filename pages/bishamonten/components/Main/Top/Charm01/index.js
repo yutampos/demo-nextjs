@@ -43,8 +43,8 @@ const Charm01 = () => {
           display="flex"
           justifyContent="center"
           padding={{ md: 7, xs: 16 }}
-          fontSize={{ md: "1rem", xs: "0.7rem" }}
-          maxHeight={{ md: "600px", xs: "730px" }}
+          // fontSize={{ md: "1rem", xs: "0.7rem" }}
+          maxHeight={{ md: "780px", xs: "730px" }}
         >
           <h3
             style={{
@@ -54,7 +54,9 @@ const Charm01 = () => {
               lineHeight: "34px",
             }}
           >
-            芸術品と言って頂ける形状、その見た目からは想像できなかったと言って頂けるしっかりとした味
+            芸術品と言って頂ける形状、その見た目からは想像できなかった
+            <br />
+            と言って頂けるしっかりとした味
             <br />
             その両面で楽しんでもらっております。
             <br />
@@ -102,13 +104,20 @@ const Section = styled.section`
       padding-right: 0rem;
     }
   }
+
   display: flex;
   justify-content: center;
   width: 100vw;
   animation-name: ${(props) => (props.inView ? "animation" : "")};
+  font-size: ${(props) => (props.inView ? "1rem" : "0rem")};
   max-width: 1600px;
   transition: all 1.3s ease;
   transform: ${(props) =>
     props.inView ? "translateY(0)" : "translateY(70px)"};
   opacity: ${(props) => (props.inView ? 1 : 0)};
+
+  @media screen and (max-width: 600px) {
+    animation-name: "";
+    font-size: ${(props) => (props.inView ? "0.7rem" : "0rem")};
+  }
 `;
