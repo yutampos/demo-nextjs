@@ -3,8 +3,8 @@ import styles from "../../../../../styles/bishamonten/components/Main/Top/top.mo
 
 import Charm01 from "./Charm01";
 import Charm02 from "./Charm02";
-
 import Charm03 from "./Charm03";
+
 import Charm04 from "./Charm04";
 import Charm05 from "./Charm05";
 import Charm06 from "./Charm06";
@@ -19,8 +19,9 @@ const Top = () => {
             width="100%"
             display="flex"
             alignItems="center"
-            paddingTop={12}
-            paddingBottom={26}
+            justifyContent="center"
+            paddingTop={{ md: 12, xs: 2 }}
+            paddingBottom={12}
             color="#C0BB82"
           >
             <Charm01 />
@@ -39,9 +40,8 @@ const Top = () => {
             </Grid>
           </Grid>
           <Grid
-            paddingY={14}
-            display="flex"
-            justifyContent="center"
+            width="100%"
+            paddingY={1}
             backgroundColor="rgba(255,255,255,0.9)"
             sx={{ backdropFilter: " blur(10px)" }}
           >
@@ -50,9 +50,8 @@ const Top = () => {
             </Grid>
           </Grid>
         </div>
-
         <Grid
-          paddingY={14}
+          paddingY={{ md: 14, xs: 3 }}
           width="100%"
           display="flex"
           flexDirection="column"
@@ -61,9 +60,7 @@ const Top = () => {
           backgroundColor="rgba(40,0,0,1)"
           color="#C0BB82"
         >
-          <Grid maxWidth="1600px" width="100%">
-            <Charm04 />
-          </Grid>
+          <Charm04 />
           <Grid maxWidth="1600px" width="100%">
             <Charm05 />
           </Grid>

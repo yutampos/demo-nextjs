@@ -77,12 +77,12 @@ export default function Bishamonten() {
                   }}
                 >
                   <Typography
+                    fontSize={{ md: "4.5rem", xs: "2.6rem" }}
                     variant="h3"
                     component="h3"
                     sx={textGold}
                     fontWeight="600"
                     style={{
-                      fontSize: "4.5rem",
                       margin: "0",
                     }}
                   >
@@ -92,12 +92,12 @@ export default function Bishamonten() {
                   </Typography>
 
                   <Typography
+                    fontSize={{ md: "1.2rem", xs: "0.8rem" }}
                     variant="p"
                     component="p"
                     sx={smallTextGold}
                     fontWeight="600"
                     style={{
-                      fontSize: "1.2rem",
                       margin: "0",
                     }}
                   >
@@ -122,6 +122,7 @@ export default function Bishamonten() {
                   style={{
                     position: "absolute",
                     top: "100vh",
+                    width: "100%",
                   }}
                 >
                   <Top />

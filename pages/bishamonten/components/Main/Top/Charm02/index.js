@@ -40,18 +40,19 @@ export default Charm02;
 
 // inViewがtrueになると透明度が0.5から1になり、50px下から移動してくる
 const Section = styled.section`
-  margin-left: 7%;
-  width: 456px;
+  // margin-left: 7%;
+  width: 100%;
+  max-width: 456px;
   height: 320px;
-  background-color: rgba(255, 255, 255, 0.86);
+  background-color: rgba(255, 255, 255, 1);
   backdrop-filter: blur(5px);
   text-shadow: 0px 0px 8px #fff, 0px 0px 5px #fff, 0px 0px 3px #fff,
     0px 0px 50px #f4fff9, 0px 0px 50px #ffffea, 0px 0px 50px #ffefff,
     0px 0px 50px #fff;
   color: black;
   filter: drop-shadow(2px 5px 5px #2e2e2e);
-  transition: all 1s ease;
+  transition: all 2s ease;
   transform: ${(props) =>
-    props.inView ? "translateY(0)" : "translateY(50px)"};
+    props.inView ? "translateX(0)" : "translateX(-70px)"};
   opacity: ${(props) => (props.inView ? 1 : 0)};
 `;

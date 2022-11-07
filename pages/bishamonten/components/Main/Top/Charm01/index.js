@@ -1,7 +1,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import Image from "next/image";
 
 const Charm01 = () => {
@@ -15,9 +15,21 @@ const Charm01 = () => {
   return (
     //　inView属性を割り当てる
     <Section ref={ref} inView={inView}>
-      <Grid width="100vw" display="flex">
-        <Grid width="55%" display="flex" justifyContent="center">
-          <Grid position="relative" width="1000px" height="550px">
+      <Grid
+        display="flex"
+        flexDirection={{ md: "row", xs: "column" }}
+        width="100%"
+      >
+        <Grid
+          width={{ md: "55%", xs: "100%" }}
+          display="flex"
+          justifyContent="center"
+        >
+          <Grid
+            position="relative"
+            width="1000px"
+            height={{ md: "550px", xs: "400px" }}
+          >
             <Image
               layout="fill"
               objectFit="contain"
@@ -26,11 +38,16 @@ const Charm01 = () => {
             />
           </Grid>
         </Grid>
-        <Grid width="45%" display="flex" justifyContent="center" padding={7}>
+        <Grid
+          width={{ md: "45%", xs: "100%" }}
+          display="flex"
+          justifyContent="center"
+          padding={{ md: 7, xs: 16 }}
+          fontSize={{ md: "1rem", xs: "0.7rem" }}
+          maxHeight={{ md: "600px", xs: "730px" }}
+        >
           <h3
             style={{
-              maxHeight: "530px",
-              fontSize: "1rem",
               writingMode: "vertical-rl",
               fontWeight: "400",
               letterSpacing: "1.6px",
@@ -49,18 +66,19 @@ const Charm01 = () => {
             <br />
             誰もが好きな間違いない安定感のある王道のおいしさです。
           </h3>
-          <h2
+          <Typography
+            fontSize={{ md: "1.7rem", xs: "1.2rem" }}
             style={{
-              fontSize: "1.5rem",
               writingMode: "vertical-rl",
-              fontWeight: "500",
+              fontWeight: "700",
               letterSpacing: "3px",
               lineHeight: "40px",
+              fontFamily: "serif",
             }}
           >
             当店の餃子は、 <br />
             宮崎名物「一口餃子」となります。
-          </h2>
+          </Typography>
         </Grid>
       </Grid>
     </Section>
@@ -70,6 +88,25 @@ export default Charm01;
 
 // inViewがtrueになると透明度が0.5から1になり、50px下から移動してくる
 const Section = styled.section`
+  // animation-name: animation;
+  animation-duration: 2s;
+
+  @keyframes animation {
+    0% {
+      padding-left: 20rem;
+      padding-right: 20rem;
+    }
+
+    100% {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+  }
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  animation-name: ${(props) => (props.inView ? "animation" : "")};
+  max-width: 1600px;
   transition: all 1.3s ease;
   transform: ${(props) =>
     props.inView ? "translateY(0)" : "translateY(70px)"};

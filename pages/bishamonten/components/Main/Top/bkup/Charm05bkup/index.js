@@ -1,29 +1,28 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import styled from "@emotion/styled";
-import { Grid } from "@mui/material";
+import ShopImage from "../../../../../../public/bishamonten/shop-logo-gold.png";
+import Cook from "../../../../../../public/bishamonten/cook.jpg";
+
 import Image from "next/image";
+import { Grid } from "@mui/material";
+import styles from "../../../../../../styles/bishamonten/components/Main/Top/Charm03/charm03.module.css";
 
 const Charm05 = () => {
   const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0,
-    rootMargin: "-200px",
+    rootMargin: "-300px",
     triggerOnce: true,
   });
 
   return (
     //　inView属性を割り当てる
     <Section ref={ref} inView={inView}>
-      <Grid
-        style={{ transition: "all 2s ease" }}
-        width="100vw"
-        pt={{ md: 15, xs: 0 }}
-        pl={{ md: "10%", xs: 0 }}
-        display="flex"
-      >
+      <Grid display="flex" flexDirection="column" justifyContent="center">
         <Grid position="relataive" height="100%">
           <Grid
+            pl={10}
             display="flex"
             flexDirection="column"
             alignItems="start"
@@ -43,7 +42,7 @@ const Charm05 = () => {
             </h2>
             <h3
               style={{
-                // paddingLeft: "2%",
+                paddingLeft: "2%",
                 maxHeight: "530px",
                 fontSize: "1rem",
                 fontWeight: "200",
@@ -64,10 +63,9 @@ const Charm05 = () => {
   );
 };
 export default Charm05;
-
 // inViewがtrueになると透明度が0.5から1になり、50px下から移動してくる
 const Section = styled.section`
-  transition: all 2s ease;
+  transition: all 1s ease;
   transform: ${(props) =>
     props.inView ? "translateY(0)" : "translateY(50px)"};
   opacity: ${(props) => (props.inView ? 1 : 0)};

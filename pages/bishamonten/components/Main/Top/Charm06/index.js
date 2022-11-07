@@ -239,7 +239,6 @@ export default Charm06;
 // inViewがtrueになると透明度が0.5から1になり、50px下から移動してくる
 const Section = styled.section`
   transition: all 1s ease;
-  transform: ${(props) =>
-    props.inView ? "translateY(0)" : "translateY(50px)"};
+
   opacity: ${(props) => (props.inView ? 1 : 0)};
 `;
